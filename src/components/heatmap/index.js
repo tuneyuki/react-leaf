@@ -42,9 +42,9 @@ function Heatmap() {
         >
           <HeatmapLayer
             points={data}
-	    longitudeExtractor={(point) => point[1]}
+            longitudeExtractor={(point) => point[1]}
             latitudeExtractor={(point) => point[0]}
-	    intensityExtractor={(point) => parseFloat('100')}
+            intensityExtractor={(point) => parseFloat('100')}
             key={Math.random() + Math.random()}
             {...heatmapOptions}
           />
