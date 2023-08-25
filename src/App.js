@@ -1,5 +1,5 @@
 import './App.css';
-import Map from './components/map';
+import Heatmap from './components/heatmap';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <div className='w-[40%]'>
             <div className='h-8'>ボタン</div>
             <div className='h-auto'>
-              <Map />
+              <Heatmap />
             </div>
           </div>
           <div className='w-[40%] border-2'>表</div>
