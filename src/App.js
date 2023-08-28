@@ -7,9 +7,16 @@ import Linechart from './components/linechart';
 function App() {
   return (
     <div className='bg-gray-500 w-screen h-screen'>
-      <header className='h-16 bg-cyan-100 border-4'>
-        <div className='text-2xl bold'>
-          Title
+      <header className='h-16 border-4 bg-gradient-to-r from-blue-800 to-sky-300 flex flex-col justify-center'>
+        <div className='flex justify-between'>
+          <div className='text-2xl font-bold text-white px-4'>
+            Title
+          </div>
+          <div className='flex mx-4'>
+            <button className='border-2 rounded-lg bg-blue-900 text-white px-8 font-bold mx-1'>hoge</button>
+            <button className='border-2 rounded-lg bg-green-500 text-white px-8 font-bold mx-1'>fuga</button>
+            <button className='border-2 rounded-lg bg-orange-500 text-white px-8 font-bold mx-1'>HOGE</button>
+          </div>
         </div>
       </header>
       <div id='Main'>
