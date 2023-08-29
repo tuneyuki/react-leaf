@@ -37,20 +37,19 @@ function Heatmap() {
     <>
         <MapContainer
           center={position}
-          zoom={4}
+          zoom={5}
           key={Math.random()}
         >
           <HeatmapLayer
             points={data}
-	    longitudeExtractor={(point) => point[1]}
+            longitudeExtractor={(point) => point[1]}
             latitudeExtractor={(point) => point[0]}
-	    intensityExtractor={(point) => parseFloat('100')}
+            intensityExtractor={(point) => parseFloat('100')}
             key={Math.random() + Math.random()}
             {...heatmapOptions}
           />
           <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
         </MapContainer>
     </>
