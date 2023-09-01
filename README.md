@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# react-leaf
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- React Dashboard by React 18 and React-leaflet
 
 ## Available Scripts
 
@@ -13,6 +13,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run mock`
+
+- モックデータ用のAPIサーバーを起動
+- APIサーバーを起動してから、本体を起動またはリロードすることでデータが反映される
+
 
 ### `npm test`
 
