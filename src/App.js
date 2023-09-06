@@ -99,7 +99,7 @@ function App() {
 	    </div>
             <div className='h-12 bg-gradient-to-r from-blue-800 to-sky-300 flex items-center justify-center'>
 	      <p className='text-white text-2xl text-bold'>
-	        Cause trend
+	        Phenomenon trend
 	      </p>
 	    </div>
 	    <div>
@@ -114,7 +114,7 @@ function App() {
 	    </div>
             <div className='h-12 bg-gradient-to-r from-blue-800 to-sky-300 flex items-center justify-center'>
 	      <p className='text-white text-2xl text-bold'>
-	        Service integration
+	        Cause trend
 	      </p>
 	    </div>
 	    <div>
