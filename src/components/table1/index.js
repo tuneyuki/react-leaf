@@ -1,5 +1,7 @@
 import { ChevronUpDownIcon } from "@heroicons/react/24/outline";
+import { ChevronDoubleLeftIcon, ChevronLeftIcon, ChevronRightIcon, ChevronDoubleRightIcon } from '@heroicons/react/24/solid';
 import { Card, CardBody, CardFooter, Typography } from "@material-tailwind/react";
+import { PageButton } from '../../shared/Button';
  
 const TABLE_HEAD = ["Number", "Name"];
  
@@ -49,7 +51,7 @@ const TABLE_ROWS = [
 function Table1() {
   return (
     <Card className="h-full w-full">
-      <CardBody>
+      <CardBody className="overflow-x-auto">
         <table className="w-full min-w-max table-auto text-left">
           <thead>
             <tr>
@@ -95,8 +97,26 @@ function Table1() {
           </tbody>
         </table>
       </CardBody>
-
-      <CardFooter className="h-12 flex items-center justify-between p-2 my-1">
+      <CardFooter className="flex items-center justify-center my-1">
+            <PageButton className="rounded-l-md">
+              <span className="sr-only">First</span>
+              <ChevronDoubleLeftIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+            </PageButton>
+            <PageButton>
+              <span className="sr-only">Previous</span>
+              <ChevronLeftIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+            </PageButton>
+	    <div className="p-2">
+	      page 1 of 10
+	    </div>
+            <PageButton>
+              <span className="sr-only">Next</span>
+              <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+            </PageButton>
+            <PageButton className="rounded-r-md">
+              <span className="sr-only">Last</span>
+              <ChevronDoubleRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+            </PageButton>
       </CardFooter>
     </Card>
   );
