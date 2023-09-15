@@ -7,10 +7,10 @@ import Table1 from './components/table1';
 
 function App() {
   return (
-    <div className='h-screen'>
+    <div>
       <header className='h-16 bg-gradient-to-r from-blue-800 to-sky-300 flex flex-col justify-center'>
         <div className='flex justify-between'>
-          <div className='text-2xl font-bold text-white px-4'>
+          <div className='text-2xl font-bold text-white px-8'>
             Operational health
           </div>
           <div className='flex mx-4'>
@@ -23,17 +23,46 @@ function App() {
       <div id='Main'>
 
         {/* 1段目 */}
-        <div className='h-96 bg-emerald-200 flex w-full'>
+        <div className='h-relative bg-white flex w-full'>
           <div className='w-[40%]'>
-            <div className='h-8'>ボタン</div>
-            <div className='h-auto'>
+            <div className='relative mt-1 flex justify-center'>
+	      <div className='flex flex-col items-center gap-1 pr-1'>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-20'>Easy</button>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-20'>Reset</button>
+	      </div>
+	      <div className='flex flex-col items-center gap-1 pr-1'>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-20'>Translate</button>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-20'>Reload</button>
+	      </div>
+	      <div className='flex flex-col items-center gap-1 pr-1'>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-20'>Heatmap</button>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-20'>Update</button>
+	      </div>
+	      <div className='flex flex-col items-center gap-1 pr-1'>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-20'>Simple</button>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-20'>Ticket</button>
+	      </div>
+	      <div className='flex flex-col items-center gap-1 pr-1'>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-24'>Normal</button>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-24'>No mosaic</button>
+	      </div>
+	      <div className='flex flex-col items-center gap-1 pr-1'>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-28'>Connection</button>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-28'>Light mode</button>
+	      </div>
+	      <div className='flex flex-col items-center gap-1 pr-1'>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-28'>Output</button>
+                <button className='border-2 rounded-md bg-white text-gray-700 text-base hover:bg-gray-50 w-28'>Dark mode</button>
+	      </div>
+	    </div>
+            <div className='h-128 m-1'>
               <Heatmap />
             </div>
           </div>
           <div className='w-[40%]'>
             <div className='h-32'>表</div>
             <div className='h-8'>パネル</div>
-	    <div className='h-56'>
+	    <div className='h-96'>
               <Linechart />
 	    </div>
 	  </div>
@@ -47,7 +76,7 @@ function App() {
         {/* 2段目 */}
         <div className='relative flex w-full'>
           <div className='w-1/5 mx-1'>
-            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center px-8 my-1'>
+            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center px-8 mb-1'>
 	      <p className='text-white text-center text-xl'>
 	        No problem
 	      </p>
@@ -62,7 +91,7 @@ function App() {
 	    </div>
           </div>
           <div className='w-1/5 mx-1'>
-            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center px-8 my-1'>
+            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center px-8 mb-1'>
 	      <p className='text-white text-center text-xl'>
 	        No problem
 	      </p>
@@ -77,7 +106,7 @@ function App() {
 	    </div>
           </div>
           <div className='w-1/5 mx-1'>
-            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center px-8 my-1'>
+            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center px-8 mb-1'>
 	      <p className='text-white text-center text-xl'>
 	        No problem
 	      </p>
@@ -92,7 +121,7 @@ function App() {
 	    </div>
           </div>
           <div className='w-1/5 mx-1'>
-            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center px-8 my-1'>
+            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center px-8 mb-1'>
 	      <p className='text-white text-center text-xl'>
 	        No problem
 	      </p>
@@ -107,7 +136,7 @@ function App() {
 	    </div>
           </div>
           <div className='w-1/5 mx-1'>
-            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center px-8 my-1'>
+            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center px-8 mb-1'>
 	      <p className='text-white text-center text-xl'>
 	        No problem
 	      </p>
