@@ -25,8 +25,8 @@ function Clock() {
   return (
     <div className="w-full flex flex-col justify-center">
       <div>
-        <h2 className="text-2xl text-center font-bold">{date}</h2>
-        <h1 className="text-5xl text-center text-blue-800 font-bold">{time}</h1>
+        <h2 className="text-3xl text-center font-bold">{date}</h2>
+        <h1 className="text-7xl text-center text-blue-800 font-bold">{time}</h1>
       </div>
     </div>
   );
