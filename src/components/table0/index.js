@@ -26,29 +26,9 @@ const TABLE_ROWS = [
     name: "eee社",
     number: "60",
   },
-  {
-    name: "vvv社",
-    number: "50",
-  },
-  {
-    name: "www社",
-    number: "40",
-  },
-  {
-    name: "xxx社",
-    number: "30",
-  },
-  {
-    name: "yyy社",
-    number: "20",
-  },
-  {
-    name: "xxx社",
-    number: "10",
-  },
 ];
  
-function Table1() {
+function Table0() {
   return (
     <Card className="h-full w-full">
       <CardBody className="overflow-x-auto">
@@ -100,26 +80,26 @@ function Table1() {
       <CardFooter className="flex items-center justify-center mt-1">
             <PageButton className="rounded-l-md">
               <span className="sr-only">First</span>
-              <ChevronDoubleLeftIcon className="h-2 w-2 text-gray-400" aria-hidden="true" />
+              <ChevronDoubleLeftIcon className="h-3 w-3 text-gray-400" aria-hidden="true" />
             </PageButton>
             <PageButton>
               <span className="sr-only">Previous</span>
-              <ChevronLeftIcon className="h-2 w-2 text-gray-400" aria-hidden="true" />
+              <ChevronLeftIcon className="h-3 w-3 text-gray-400" aria-hidden="true" />
             </PageButton>
 	    <div className="p-2">
 	      page 1 of 10
 	    </div>
             <PageButton>
               <span className="sr-only">Next</span>
-              <ChevronRightIcon className="h-2 w-2 text-gray-400" aria-hidden="true" />
+              <ChevronRightIcon className="h-3 w-3 text-gray-400" aria-hidden="true" />
             </PageButton>
             <PageButton className="rounded-r-md">
               <span className="sr-only">Last</span>
-              <ChevronDoubleRightIcon className="h-2 w-2 text-gray-400" aria-hidden="true" />
+              <ChevronDoubleRightIcon className="h-3 w-3 text-gray-400" aria-hidden="true" />
             </PageButton>
       </CardFooter>
     </Card>
   );
 };
 
-export default Table1;
+export default Table0;

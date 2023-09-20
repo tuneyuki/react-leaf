@@ -8,7 +8,7 @@ function Clock() {
     setInterval(() => {
       let nowDate = new Date();
       let dayOfWeekStr = [ "日", "月", "火", "水", "木", "金", "土" ]
-      let dateStr =  ( '0000' + nowDate.getFullYear()).slice( -4 ) + "/" + ( '00' + nowDate.getMonth()).slice( -2 ) + "/" + ( '00' + nowDate.getDate()).slice( -2 ) + "(" + dayOfWeekStr[nowDate.getDay()] + ")"
+      let dateStr =  ( '0000' + nowDate.getFullYear()).slice( -4 ) + "/" + ( '00' + (nowDate.getMonth() + 1)).slice( -2 ) + "/" + ( '00' + nowDate.getDate()).slice( -2 ) + "(" + dayOfWeekStr[nowDate.getDay()] + ")"
       setDate(dateStr)
     }, 1000)
   },[])
@@ -23,9 +23,9 @@ function Clock() {
 
 
   return (
-    <div className="w-full flex flex-col justify-center">
+    <div className="w-full flex flex-col items-center justify-center">
       <div>
-        <h2 className="text-3xl text-center font-bold">{date}</h2>
+        <h2 className="text-4xl text-center font-bold">{date}</h2>
         <h1 className="text-7xl text-center text-blue-800 font-bold">{time}</h1>
       </div>
     </div>

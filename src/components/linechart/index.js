@@ -72,7 +72,10 @@ export const options = {
   maintainAspectRatio: false,
   scales: {
     x: {
-      stacked: false
+      stacked: false,
+      grid: {
+          display: false,
+      },
     },
     y: {
       stacked: false,

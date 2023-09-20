@@ -32,7 +32,7 @@ function TableStatic() {
   }, []);
 
   return (
-    <table class="w-full text-sm text-gray-500 dark:text-gray-400">
+    <table class="w-full text-sm dark:text-gray-400">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
                 <th scope="col" class="text-center py-2">
@@ -59,39 +59,39 @@ function TableStatic() {
                 <th scope="row" class="py-4 font-medium text-center text-gray-900 whitespace-nowrap dark:text-white">
                     Company
                 </th>
-                <td class="text-center">
+                <td class="text-center text-lg font-bold">
 	            {data1}
                 </td>
-                <td class="text-center">
+                <td class="text-center text-lg font-bold">
 	            {data2}
                 </td>
-                <td class="text-center">
+                <td class="text-center text-lg font-bold">
 	            {data3}
                 </td>
-                <td class="text-center">
+                <td class="text-center text-lg font-bold">
 	            {data4}
                 </td>
-                <td class="text-center">
+                <td class="text-center text-lg font-bold">
 	            {data5}
                 </td>
             </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <tr class="bg-white dark:bg-gray-800">
                 <th scope="row" class="py-4 font-medium text-center text-gray-900 whitespace-nowrap dark:text-white">
                     Connection
                 </th>
-                <td class="text-center">
+                <td class="text-center text-lg font-bold">
 	            {data6}
                 </td>
-                <td class="text-center">
+                <td class="text-center text-lg font-bold">
 	            {data7}
                 </td>
-                <td class="text-center">
+                <td class="text-center text-lg font-bold">
 	            {data8}
                 </td>
-                <td class="text-center">
+                <td class="text-center text-lg font-bold">
 	            {data9}
                 </td>
-                <td class="text-center">
+                <td class="text-center text-lg font-bold">
 	            {data10}
                 </td>
             </tr>
