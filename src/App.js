@@ -1,7 +1,9 @@
 import './App.css';
 import Heatmap from './components/heatmap';
+import Bubble from './components/bubble'
 import Clock from './components/clock'
 import Linechart from './components/linechart';
+import Table0 from './components/table0';
 import Table1 from './components/table1';
 import TableStatic from './components/table-static';
 
@@ -60,12 +62,12 @@ function App() {
                 </div>
               </div>
 	    </div>
-            <div className='h-128 m-1 p-1 border'>
+            <div className='md:h-160 h-128 m-1 p-1 border'>
               <Heatmap />
             </div>
           </div>
           <div className='2xl:w-[30%] w-full'>
-            <div className='h-relative m-1 p-1 border'>
+            <div className='h-36 m-1 p-1 border'>
 	      <TableStatic />
 	    </div>
             <div className='h-8 rounded-lg bg-orange-600 border-orange-600 flex items-center justify-center m-1'>
@@ -73,13 +75,31 @@ function App() {
 	        Caution! XYZ alerm shows different trend.
 	      </p>
 	    </div>
-	    <div className='h-96 m-1 p-1 border'>
+	    <div className='md:h-128 h-96 m-1 p-1 border'>
               <Linechart />
 	    </div>
 	  </div>
-          <div className='2xl:w-[30%] w-full mx-1'>
-	    <div>
+          <div className='2xl:w-[30%] w-full'>
+	    <div className='h-36 m-1 p-1 flex items-center justify-center'>
               <Clock />
+	    </div>
+            <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center m-1'>
+	      <p className='text-white text-center text-xl'>
+	        Nothing special
+	      </p>
+	    </div>
+	    <div className='m-1 p-1 border'>
+              <div className='h-12 bg-gradient-to-r from-blue-800 to-sky-300 flex items-center justify-center'>
+	        <p className='text-white text-2xl text-bold'>
+	          Customer
+	        </p>
+	      </div>
+	      <div>
+	        <Table0 />
+	      </div>
+            </div>
+	    <div className='h-56 m-1 p-1 border w-auto'>
+              <Bubble />
 	    </div>
           </div>
         </div>
@@ -89,13 +109,13 @@ function App() {
           <div className='md:w-1/5 w-full'>
             <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center m-1'>
 	      <p className='text-white text-center text-xl'>
-	        No problem
+	        Nothing special
 	      </p>
 	    </div>
 	    <div className='m-1 p-1 border'>
               <div className='h-12 bg-gradient-to-r from-blue-800 to-sky-300 flex items-center justify-center'>
 	        <p className='text-white text-2xl text-bold'>
-	          Service integration trend
+	          Service integration
 	        </p>
 	      </div>
 	      <div>
@@ -106,13 +126,13 @@ function App() {
           <div className='md:w-1/5 w-full'>
             <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center m-1'>
 	      <p className='text-white text-center text-xl'>
-	        No problem
+	        Nothing special
 	      </p>
 	    </div>
 	    <div className='m-1 p-1 border'>
               <div className='h-12 bg-gradient-to-r from-blue-800 to-sky-300 flex items-center justify-center'>
 	        <p className='text-white text-2xl text-bold'>
-	          Area trend
+	          Area
 	        </p>
 	      </div>
 	      <div>
@@ -123,13 +143,13 @@ function App() {
           <div className='md:w-1/5 w-full'>
             <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center m-1'>
 	      <p className='text-white text-center text-xl'>
-	        No problem
+	        Nothing special
 	      </p>
 	    </div>
 	    <div className='m-1 p-1 border'>
               <div className='h-12 bg-gradient-to-r from-blue-800 to-sky-300 flex items-center justify-center'>
 	        <p className='text-white text-2xl text-bold'>
-	          Service trend
+	          Service
 	        </p>
 	      </div>
 	      <div>
@@ -140,13 +160,13 @@ function App() {
           <div className='md:w-1/5 w-full'>
             <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center m-1'>
 	      <p className='text-white text-center text-xl'>
-	        No problem
+	        Nothing special
 	      </p>
 	    </div>
 	    <div className='m-1 p-1 border'>
               <div className='h-12 bg-gradient-to-r from-blue-800 to-sky-300 flex items-center justify-center'>
 	        <p className='text-white text-2xl text-bold'>
-	          Phenomenon trend
+	          Phenomenon
 	        </p>
 	      </div>
 	      <div>
@@ -157,13 +177,13 @@ function App() {
           <div className='md:w-1/5 w-full'>
             <div className='h-8 rounded-lg bg-green-600 border-green-600 flex items-center justify-center m-1'>
 	      <p className='text-white text-center text-xl'>
-	        No problem
+	        Nothing special
 	      </p>
 	    </div>
 	    <div className='m-1 p-1 border'>
               <div className='h-12 bg-gradient-to-r from-blue-800 to-sky-300 flex items-center justify-center'>
 	        <p className='text-white text-2xl text-bold'>
-	          Cause trend
+	          Cause
 	        </p>
 	      </div>
 	      <div>
